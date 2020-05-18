@@ -55,21 +55,21 @@ namespace CaseDiff
             {
                 switch (section.Operation)
                 {
-                    case DiffOperation.Match:
+                    case DiffOperation.Replace:
+                    case DiffOperation.Modify:
                     case DiffOperation.Insert:
                     case DiffOperation.Delete:
                         // We don't care about these
                         break;
 
-                    case DiffOperation.Replace:
-                    case DiffOperation.Modify:
+                    case DiffOperation.Match:
                         int leftLineIndex = section.ElementIndexFromCollection1.Value;
                         int rightLineIndex = section.ElementIndexFromCollection2.Value;
 
                         var leftLine = leftSide[leftLineIndex].Trim();
                         var rightLine = rightSide[rightLineIndex].Trim();
 
-                        if (leftLine != rightLine && StringComparer.OrdinalIgnoreCase.Equals(leftLine, rightLine))
+                        if (leftLine != rightLine)
                         {
                             int leftLineNo = section.ElementIndexFromCollection1.Value + 1;
                             int rightLineNo = section.ElementIndexFromCollection2.Value + 1;
