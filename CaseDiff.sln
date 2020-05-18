@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseDiff", "CaseDiff\CaseDiff.csproj", "{134B264D-804E-4E91-BCDA-3C5121094764}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D93A493B-1810-4C9A-B9F3-788FC496F62C}"
+ProjectSection(SolutionItems) = preProject
+	.editorconfig = .editorconfig
+	.gitattributes = .gitattributes
+	.gitignore = .gitignore
+	README.md = README.md
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{134B264D-804E-4E91-BCDA-3C5121094764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134B264D-804E-4E91-BCDA-3C5121094764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134B264D-804E-4E91-BCDA-3C5121094764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134B264D-804E-4E91-BCDA-3C5121094764}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
